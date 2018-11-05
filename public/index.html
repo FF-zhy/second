@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <!-- 引入CSS -->
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <header>
+        <!-- 头部导航栏 -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">超市账单管理系统</a>
+              </div>
+          
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">          
+                <ul class="nav navbar-nav navbar-right login-none">
+                  <li class=""><a  href="/html/login.html">登录</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right login-success hidden">
+                    <li style="line-height:50px;color:white;font-size:14px;margin-right: 5px"></li>
+                    <li> <a class="logout-btn" href="#">注销</a></li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <div class="time">
+            <div id='webTime'></div>
+            <span class="right">温馨提示：为了能正常浏览，请使用高版本浏览器！</span>
+        </div>  
+        
+        <!-- 左边的导航栏 -->
+        <div class="row" style="padding-top:1%;">
+            <ul class="nav nav-pills nav-stacked  col-xs-2 my-list-ul" style="text-align:center;margin: 0 0 0 2%; border-right: 1px solid blue">
+                <li role="presentation" class="no-hover active"><a href="#">功能列表</a></li>
+                <li role="presentation"><a href="#">账单管理</a></li>
+                <li role="presentation"><a href="#">供应商管理</a></li>
+                <li role="presentation"><a href="#">用户管理</a></li>
+                <li role="presentation"><a href="#">密码修改</a></li>
+                <li role="presentation"><a href="#">退出系统</a></li>
+            </ul>
+
+            <!-- 权限不足提示条 -->
+            <div class="col-xs-9  alert alert-warning no-user" role="alert">请登录后，继续操作</div>
+            <!--右边的数据显示区域  -->
+            <div class="col-xs-9  data-show hidden have-user" style="padding-left:35px">
+                <div class="position-hint">您现在所在的位置是：<span>供应商管理页面</span></div>
+                <!-- 数据查询操作 -->
+                <div class="real-data ">
+                    <div class="alert alert-success" role="alert">
+
+                    </div><!--alert-->
+                </div>
+                
+                
+                 <!--显示 表格 -->
+                 <table class="table  table-bordered table-hover " >
+                   <thead>
+                     
+                   </thead>
+                   <tbody>
+                     
+                   </tbody>
+                 </table>
+            </div>
+        </div>
+    </header>
+
+    
+    
+   
+
+
+
+      <!-- 导入的文件 -->
+      <script src="/lib/jquery/jquery-1.12.4.min.js"></script>
+      <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
+      <script src="/lib/ejs/ejs.min.js"></script>
+      <!-- js -->
+      <script src="/js/billManage.js"></script>
+      <script src="/js/index.js"></script>
+      
+</body>
+</html>

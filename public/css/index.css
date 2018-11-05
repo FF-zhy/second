@@ -1,0 +1,58 @@
+header .navbar {
+    background-color: skyblue;
+    margin-bottom: 0
+}
+header .navbar .navbar-brand{
+    color: white ;
+}
+header .navbar  .navbar-nav>li>a {
+    color: white !important;
+    background: green !important;
+}
+#webTime{
+    float: left;
+}
+.right{
+    float: right;
+}
+header .time{
+    padding:  0 2%;
+    border-bottom: 1px solid #ccc;
+    height: 20px;
+}
+
+header .data-show{
+    background: #ccc;
+    min-height: 50px;
+}
+header .position-hint{
+    height: 35px;
+    line-height: 35px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    padding-left: 50px;
+}
+header .position-hint span{
+    color: skyblue;
+}
+header .left{
+    float: left;
+}
+header select{
+    height: 26px;
+    line-height: 26px;
+    margin: 0 5px;
+}
+header .alert-success{
+    height: 55px;
+}
+header .alert-success span{
+    height: 26px;
+    line-height: 26px;
+    margin:  0 0 0 6px
+}
+header .alert-success button{
+    border: none;
+    padding: 4px 25px;
+}
